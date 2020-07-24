@@ -47,9 +47,14 @@ function handleSubmit(event) {
 
 // TODO: Add the selected item and quantity to the cart
 function addSelectedItemToCart() {
+  var getItemFromPage = document.getElementById('items');
+  var pickedItem = getItemFromPage.value;
+  var getNumberFromPage = document.getElementById('quantity');
+  var pickNumber = getNumberFromPage.value;
   // TODO: suss out the item picked from the select list
   // TODO: get the quantity
   // TODO: using those, add one item to the Cart
+  cart.addItem(pickedItem,pickNumber);
 }
 
 // TODO: Update the cart count in the header nav with the number of items in the Cart
